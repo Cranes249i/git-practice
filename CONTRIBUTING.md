@@ -6,11 +6,11 @@
 
 1. **Fork**：点仓库页右上角的 Fork，把这个仓库复制到你自己的账号下。
 2. **克隆你的 Fork**：`git clone https://github.com/你的用户名/git-practice.git`，然后 `cd git-practice`。
-3. **加上 upstream**：`git remote add upstream https://github.com/Cranes249i/git-practice.git`，再 `git fetch upstream`。
+3. **加上 upstream**：`git remote add upstream https://github.com/xwl-cranes/git-practice.git`，再 `git fetch upstream`。
 4. **开一条分支**：`git switch -c 修正错别字`（分支名可以自己起）。不要直接在 main 上改。
 5. **改一处**：把 README.md 第 3 行的“说名”改成“说明”。只改这一处，不要顺手重排别的内容。
 6. **提交并推到你的 Fork**：`git add README.md`、`git commit -m "修正 README 里的错别字：说名→说明"`、`git push -u origin 修正错别字`。
-7. **向这里开 PR**：回到 GitHub，点 Compare & pull request；确认 base repository 是 `Cranes249i/git-practice`、head repository 是你的 Fork。描述里写三件事：改了什么、为什么、怎么验证。
+7. **向这里开 PR**：回到 GitHub，点 Compare & pull request；确认 base repository 是 `xwl-cranes/git-practice`、head repository 是你的 Fork。描述里写三件事：改了什么、为什么、怎么验证。
 8. **等待审查并回应**：课程方会在 PR 里留意见，通常会请你把名字加进 README 的“参与者”一节。在同一条分支上改、提交、`git push`，PR 会自动更新，不要开新的 PR。
 9. **被合并之后**：`git switch main`、`git fetch upstream`、`git merge upstream/main`、`git push`，再删掉工作分支：`git push origin --delete 修正错别字`、`git branch -d 修正错别字`。
 
